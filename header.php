@@ -14,6 +14,7 @@ if(!session_id())
     <!--flexslider-css-->
     <link href="css/flexslider.css" rel='stylesheet' type='text/css' />
     <link href="css/mordern-business.css" rel='stylesheet' type='text/css' />
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!--bootstrap-->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!--coustom css-->
@@ -27,6 +28,71 @@ if(!session_id())
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        //jQuery is required to run this code
+        $( document ).ready(function() {
+
+            scaleVideoContainer();
+
+            initBannerVideoSize('.video-container .poster img');
+            initBannerVideoSize('.video-container .filter');
+            initBannerVideoSize('.video-container video');
+
+            $(window).on('resize', function() {
+                scaleVideoContainer();
+                scaleBannerVideoSize('.video-container .poster img');
+                scaleBannerVideoSize('.video-container .filter');
+                scaleBannerVideoSize('.video-container video');
+            });
+
+        });
+
+        function scaleVideoContainer() {
+
+            var height = $(window).height() + 5;
+            var unitHeight = parseInt(height) + 'px';
+            $('.homepage-hero-module').css('height',unitHeight);
+
+        }
+
+        function initBannerVideoSize(element){
+
+            $(element).each(function(){
+                $(this).data('height', $(this).height());
+                $(this).data('width', $(this).width());
+            });
+
+            scaleBannerVideoSize(element);
+
+        }
+
+        function scaleBannerVideoSize(element){
+
+            var windowWidth = $(window).width(),
+                    windowHeight = $(window).height() + 5,
+                    videoWidth,
+                    videoHeight;
+
+            console.log(windowHeight);
+
+            $(element).each(function(){
+                var videoAspectRatio = $(this).data('height')/$(this).data('width');
+
+                $(this).width(windowWidth);
+
+                if(windowWidth < 1000){
+                    videoHeight = windowHeight;
+                    videoWidth = videoHeight / videoAspectRatio;
+                    $(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+                    $(this).width(videoWidth).height(videoHeight);
+                }
+
+                $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+            });
+        }
+    </script>
     <!--script-->
     <script type="text/javascript">
         jQuery(document).ready(function($) {
@@ -36,9 +102,85 @@ if(!session_id())
             });
         });
     </script>
+    <style>
+        pre {
+            border: 1px grey dotted;
+            padding: 1em;
+        }
+
+        #bs-example-navbar-collapse-1 {
+            position: relative;
+            top: 5px;
+        }
+
+        .collapse li a {
+            font-size: 120%;
+            font-family: Arial;
+        }
+
+        .homepage-hero-module {
+            border-right: none;
+            border-left: none;
+            position: relative;
+        }
+
+        .no-video .video-container video,
+        .touch .video-container video {
+            display: none;
+        }
+
+        .no-video .video-container .poster,
+        .touch .video-container .poster {
+            display: block !important;
+        }
+
+        .video-container {
+            position: relative;
+            bottom: 0%;
+            left: 0%;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            background: #000;
+        }
+
+            .video-container .poster img {
+                width: 100%;
+                bottom: 0;
+                position: absolute;
+            }
+
+            .video-container .filter {
+                z-index: 100;
+                position: absolute;
+                background: rgba(0, 0, 0, 0.4);
+                width: 100%;
+            }
+
+            .video-container video {
+                position: fixed;
+                z-index: 0;
+                bottom: 0;
+            }
+
+                .video-container video.fillWidth {
+                    width: 100%;
+                }
+    </style>
     <!--fonts-->
 </head>
 <body>
+    <div class="homepage-hero-module" style="position: fixed; z-index:0;">
+        <div class="video-container">
+            <video autoplay loop class="fillWidth"; style="opacity: 0.8;">
+                <source src="MP4/Up.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                <source src="WEBM/Up.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            </video>
+            <div class="poster hidden">
+                <img src="Snapshots/Up.jpg" alt="">
+            </div>
+        </div>
+    </div>
 <div class="header" id="home">
     <nav class="navbar navbar-default">
         <div class="container">
@@ -109,3 +251,4 @@ if(!session_id())
             <div class="clearfix"></div>
         </div><!-- /.container-fluid -->
     </nav>
+    </div>
