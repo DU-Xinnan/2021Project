@@ -1,0 +1,137 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>2021project</Name>
+    <ProjectGuid>{06eb9345-bcdf-43af-860e-2a9213795388}</ProjectGuid>
+    <RootNamespace>
+    </RootNamespace>
+    <OutputType>Library</OutputType>
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include=".idea\copyright\profiles_settings.xml" />
+    <Compile Include=".idea\2021Project.iml" />
+    <Compile Include=".idea\encodings.xml" />
+    <Compile Include=".idea\misc.xml" />
+    <Compile Include=".idea\modules.xml" />
+    <Compile Include=".idea\sqldialects.xml" />
+    <Compile Include=".idea\workspace.xml" />
+    <Compile Include=".idea\_name" />
+    <Compile Include="configs\configs.php" />
+    <Compile Include="core\admin.inc.php" />
+    <Compile Include="core\user.inc.php" />
+    <Compile Include="css\bootstrap.min.css" />
+    <Compile Include="css\chocolat.css" />
+    <Compile Include="css\flexslider.css" />
+    <Compile Include="css\normalize.css" />
+    <Compile Include="css\style.css" />
+    <Compile Include="css\swipebox.css" />
+    <Compile Include="data\data.sql" />
+    <Compile Include="fonts\Open_Sans\LICENSE.txt" />
+    <Compile Include="fonts\Open_Sans\OpenSans-Bold.ttf" />
+    <Compile Include="fonts\Open_Sans\OpenSans-ExtraBold.ttf" />
+    <Compile Include="fonts\Open_Sans\OpenSans-Light.ttf" />
+    <Compile Include="fonts\Open_Sans\OpenSans-Regular.ttf" />
+    <Compile Include="fonts\Open_Sans\OpenSans-Semibold.ttf" />
+    <Compile Include="fonts\Open_Sans\Quicksand-Regular.ttf" />
+    <Compile Include="fonts\Quicksand\OFL.txt" />
+    <Compile Include="fonts\Quicksand\Quicksand-Bold.ttf" />
+    <Compile Include="fonts\Quicksand\Quicksand-Light.ttf" />
+    <Compile Include="fonts\Quicksand\Quicksand-Regular.ttf" />
+    <Compile Include="fonts\glyphicons-halflings-regular.eot" />
+    <Compile Include="fonts\glyphicons-halflings-regular.svg" />
+    <Compile Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Compile Include="fonts\glyphicons-halflings-regular.woff" />
+    <Compile Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Compile Include="images\1.jpg" />
+    <Compile Include="images\11.jpg" />
+    <Compile Include="images\12.jpg" />
+    <Compile Include="images\13.jpg" />
+    <Compile Include="images\14.jpg" />
+    <Compile Include="images\15.jpg" />
+    <Compile Include="images\16.jpg" />
+    <Compile Include="images\17.jpg" />
+    <Compile Include="images\18.jpg" />
+    <Compile Include="images\19.jpg" />
+    <Compile Include="images\20.jpg" />
+    <Compile Include="images\21.jpg" />
+    <Compile Include="images\22.jpg" />
+    <Compile Include="images\23.jpg" />
+    <Compile Include="images\24.jpg" />
+    <Compile Include="images\25.jpg" />
+    <Compile Include="images\26.jpg" />
+    <Compile Include="images\aa.jpg" />
+    <Compile Include="images\ab.jpg" />
+    <Compile Include="images\ac.jpg" />
+    <Compile Include="images\ad.jpg" />
+    <Compile Include="images\ae.jpg" />
+    <Compile Include="images\af.jpg" />
+    <Compile Include="images\banner_img.jpg" />
+    <Compile Include="images\close.png" />
+    <Compile Include="images\half-arrow.png" />
+    <Compile Include="images\icons.svg" />
+    <Compile Include="images\IMG_1.jpg" />
+    <Compile Include="images\IMG_2.jpg" />
+    <Compile Include="images\IMG_3.jpg" />
+    <Compile Include="images\IMG_4.jpg" />
+    <Compile Include="images\IMG_5.jpg" />
+    <Compile Include="images\IMG_6.jpg" />
+    <Compile Include="images\left (1).png" />
+    <Compile Include="images\left.png" />
+    <Compile Include="images\logo.png" />
+    <Compile Include="images\new.png" />
+    <Compile Include="images\office.jpg" />
+    <Compile Include="images\right (1).png" />
+    <Compile Include="images\right.png" />
+    <Compile Include="images\scroll-top.png" />
+    <Compile Include="images\social.png" />
+    <Compile Include="images\SplitShire-5215.jpg" />
+    <Compile Include="images\twitter.png" />
+    <Compile Include="js\bootstrap.min.js" />
+    <Compile Include="js\easing.js" />
+    <Compile Include="js\jquery-2.1.4.min.js" />
+    <Compile Include="js\jquery.chocolat.js" />
+    <Compile Include="js\jquery.flexslider.js" />
+    <Compile Include="js\jquery.swipebox.min.js" />
+    <Compile Include="js\jquery.wmuSlider.js" />
+    <Compile Include="js\modernizr.custom.js" />
+    <Compile Include="js\move-top.js" />
+    <Compile Include="library\common.func.php" />
+    <Compile Include="library\mysql.func.php" />
+    <Compile Include="library\page.func.php" />
+    <Compile Include="library\upload.func.php" />
+    <Compile Include="about.html" />
+    <Compile Include="contact.html" />
+    <Compile Include="doAction.php" />
+    <Compile Include="footer.php" />
+    <Compile Include="gallery.html" />
+    <Compile Include="handleComment.php" />
+    <Compile Include="header.php" />
+    <Compile Include="header.php.txt" />
+    <Compile Include="include.php" />
+    <Compile Include="index.php" />
+    <Compile Include="newComment.php" />
+    <Compile Include="pages.html" />
+    <Compile Include="register.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".idea\copyright" />
+    <Folder Include=".idea" />
+    <Folder Include="configs" />
+    <Folder Include="core" />
+    <Folder Include="css" />
+    <Folder Include="data" />
+    <Folder Include="fonts\Open_Sans" />
+    <Folder Include="fonts\Quicksand" />
+    <Folder Include="fonts" />
+    <Folder Include="images" />
+    <Folder Include="js" />
+    <Folder Include="library" />
+  </ItemGroup>
+</Project>
