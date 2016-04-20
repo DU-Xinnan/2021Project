@@ -1,4 +1,5 @@
 <?php
+include_once 'include.php';
 if(!session_id())
     session_start();
 ?>
@@ -169,7 +170,7 @@ if(!session_id())
     </style>
     <!--fonts-->
 </head>
-<body>
+<body style="background-image:url('images/background.png')">
     <div class="homepage-hero-module" style="position: fixed; z-index:0;">
         <div class="video-container">
             <video autoplay loop class="fillWidth"; style="opacity: 0.8;">

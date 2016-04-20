@@ -1,7 +1,8 @@
 <?php
-include_once "header.php"
+include_once "header.php";
 //红色：#d80b36 !important
 //亮蓝：#00BFE9 !important 
+$toprated= gettop($link);
 ?>
 <div class="header-banner">
 	<!-- Top Navigation -->
@@ -60,7 +61,7 @@ include_once "header.php"
             </h1>
         </div>
         <div class="col-md-12">
-            <div class="panel panel-default">
+            <div class="panel panel-info">
                 <div class="panel-heading">
                     <h2><i class="fa fa-fw fa-check"></i>UROP</h2>
                 </div>
@@ -126,86 +127,63 @@ include_once "header.php"
                 </script>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Our Team</h2>
-        </div>
-        <div class="col-md-4 text-center">
-            <div class="thumbnail">
-                <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                <div class="caption">
-                    <h3>
-                        John Smith<br>
-                        <small>Job Title</small>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                        </li>
-                    </ul>
+        <div class="row" style="position:relative;">
+            <div class="col-lg-12">
+                <h2 class="page-header" style="text-align:center;">Recommandations</h2>
+            </div>
+            <?php foreach($toprated as $row):  ?>
+            <div class="col-md-4 text-center">
+                <div class="thumbnail">
+                    <div class="caption">
+                        <h3>
+                            <strong>
+                                <a href=<?php echo "professor.php?pid=".$row['p_id']."  "?>><?php echo $row['name']."  "?></a>
+                            </strong>
+                            <span style="color:#00BFE9 !important;">
+                                <?php echo $row['department']?>
+                            </span>
+                        </h3>
+                        <hr>
+                        <table class="table table-hover table-striped">
+                            <tr>
+                                <th width="40%">Research Area</th>
+                                <th width="60%">
+                                    <?php echo $row['research']?>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th width="40%">Research Area</th>
+                                <th width="60%">
+                                    <a href="mailto:<?php echo $row['email']?>" title="Send Email">
+                                        <?php echo $row['email']?>
+                                    </a>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th width="40%">Department</th>
+                                <th width="60%">
+                                    <?php echo $row['department']?>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th width="40%">Star</th>
+                                <th width="60%">
+                                    <button class="btn btn-info" type="button">
+                                        Star
+                                        <span class="badge">
+                                            <?php echo $row['star']?>
+                                        </span>
+                                    </button>
+                                </th>
+                            </tr>
+                        </table>
+                        <p></p>
+                    </div>
                 </div>
             </div>
+            <?php endforeach?>
         </div>
-        <div class="col-md-4 text-center">
-            <div class="thumbnail">
-                <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                <div class="caption">
-                    <h3>
-                        John Smith<br>
-                        <small>Job Title</small>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 text-center">
-            <div class="thumbnail">
-                <img class="img-responsive" src="http://placehold.it/750x450" alt="">
-                <div class="caption">
-                    <h3>
-                        John Smith<br>
-                        <small>Job Title</small>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste saepe et quisquam nesciunt maxime.</p>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-2x fa-facebook-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-2x fa-linkedin-square"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-2x fa-twitter-square"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-
     </div>
-    </div>
-    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/">企业网站模板</a></div>
     </div>
     <?php
 include_once "footer.php"

@@ -12,7 +12,6 @@ require_once 'library/mysql.func.php';
 //require_once 'image.func.php';
 require_once 'library/common.func.php';
 //require_once 'string.func.php';
-require_once 'library/page.func.php';
 require_once "configs/configs.php";
 require_once 'core/admin.inc.php';
 //require_once 'cate.inc.php';

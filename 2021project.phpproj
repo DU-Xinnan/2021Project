@@ -1,3 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -104,7 +105,6 @@
     <Compile Include="js\move-top.js" />
     <Compile Include="library\common.func.php" />
     <Compile Include="library\mysql.func.php" />
-    <Compile Include="library\page.func.php" />
     <Compile Include="library\upload.func.php" />
     <Compile Include="about.html" />
     <Compile Include="contact.html" />

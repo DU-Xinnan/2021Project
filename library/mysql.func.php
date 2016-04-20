@@ -66,3 +66,9 @@ function fetchAll($sql,$link){
     }
     return $rows;
 }
+
+function gettop($link){
+    $sql="select * from professor order by star desc LIMIT 6";
+    $result=fetchAll($sql, $link);
+    return $result;
+}
