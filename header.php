@@ -171,7 +171,7 @@ if(!session_id())
     <!--fonts-->
 </head>
 <body style="background-image:url('images/background.png')">
-    <div class="homepage-hero-module" style="position: fixed; z-index:0;">
+    <div class="homepage-hero-module" style="position: fixed;">
         <div class="video-container">
             <video autoplay loop class="fillWidth"; style="opacity: 0.8;">
                 <source src="MP4/Up.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
@@ -182,7 +182,7 @@ if(!session_id())
             </div>
         </div>
     </div>
-<div class="header" id="home">
+<div class="header" id="home" style="position:fixed; width:100%;z-index:10;">
     <nav class="navbar navbar-default">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -200,21 +200,13 @@ if(!session_id())
                 <ul class="nav navbar-nav navbar-right margin-top cl-effect-2">
                     <li><a href="index.php"><span data-hover="Home">Home</span></a></li>
                     <li class="dropdown">
-                        <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="About">About</span><span class="caret"></span></a>
+                        <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Reviews">Reviews</span><span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="about.html"><span data-hover="Action">Action</span></a></li>
-                            <li><a href="Pages.html"><span data-hover="Pages">Pages</span></a></li>
+                            <li><a href="about.html"><span data-hover="UROP">UROP</span></a></li>
+                            <li><a href="Pages.html"><span data-hover="LANG">LANG</span></a></li>
                             <li>
-                            <?php
-                                if(!isset($_SESSION['username'])){
-                                    echo "<a href=\"register.php\"><span data-hover=\"Register\">Write Comment</span></a>";
-                                }
-                                else{
-                                    echo "<a href=\"newComment.php\"><span data-hover=\"Write Comment\">Write Comment</span></a>";
-                                }
-                            ?>
+                                <a href="newComment.php"><span data-hover="LABU">LABU</span></a>
                             </li>
-                            <li><a href="contact.html"><span data-hover="Contact">Contact</span></a></li>
                         </ul>
                         <?php
                         if(isset($_SESSION['username'])){
