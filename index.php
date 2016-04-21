@@ -60,83 +60,24 @@ $toprated= gettop($link);
                 Welcome to UST<span style="color:#00BFE9 !important;">eacher</span>
             </h1>
         </div>
-        <div class="col-md-12">
-            <div class="panel panel-info">
-                <div class="panel-heading">
-                    <h2><i class="fa fa-fw fa-check"></i>UROP</h2>
-                </div>
-                <div class="panel-body">
-                    <p>The Undergraduate Research Opportunities Program, or UROP for short,
-                     is a HKUST signature program designed to provide undergraduate students 
-                    with an exciting opportunity to engage in academic research, thereby helping 
-                    them to develop insightful perspectives on their areas of interest and advance the frontiers of knowledge.
-                     Launched in 2005, UROP is offered every summer to allow students to immerse themselves in a variety of 
-                    tailor-made research projects under the supervision of world-class researchers.</p>
-                    <a href="#" class="btn btn-default">Learn More</a>
-                </div>
+        <a href="#" class="alert-link">
+        <div class="alert alert-success col-md-4" role="alert" style="height: 300px;">
+            <h1 style="text-align: center;position:relative;top:100px;;"><span class="glyphicon glyphicon-registration-mark"></span><strong> UROP</strong><br><button type="button" class="btn btn-success">See Details</button></h1>
+        </div>
+        </a>
+        <a href="#" class="alert-link">
+            <div class="alert alert-info col-md-4" role="alert" style="height: 300px;">
+                <h1 style="text-align: center;position:relative;top:100px;;"><span class="glyphicon glyphicon-warning-sign"></span><strong> LANG</strong><br><button type="button" class="btn btn-info">See Details</button></h1>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="page-header">Service Tabs</h2>
-        </div>
-        <div class="col-lg-12">
-
-            <ul id="myTab" class="nav nav-tabs nav-justified">
-                <li class="active">
-                    <a href="#service-one" data-toggle="tab">
-                        <i class="fa fa-tree"></i>
-                        Service One
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#service-two" data-toggle="tab">
-                        <i class="fa fa-car"></i>
-                        Service Two
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#service-three" data-toggle="tab">
-                        <i class="fa fa-support"></i>
-                        Service Three
-                    </a>
-                </li>
-                <li class="">
-                    <a href="#service-four" data-toggle="tab">
-                        <i class="fa fa-database"></i>
-                        Service Four
-                    </a>
-                </li>
-            </ul>
-
-            <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade active in" id="service-one">
-                    <h4>Service One</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                </div>
-                <div class="tab-pane fade" id="service-two">
-                    <h4>Service Two</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                </div>
-                <div class="tab-pane fade" id="service-three">
-                    <h4>Service Three</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                </div>
-                <div class="tab-pane fade" id="service-four">
-                    <h4>Service Four</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                </div>
+        </a>
+        <a href="#" class="alert-link">
+            <div class="alert alert-warning col-md-4" role="alert" style="height: 300px;">
+                <h1 style="text-align: center;position:relative;top:100px;;"><span class=" glyphicon glyphicon-time"></span><strong> LABU</strong><br><button type="button" class="btn btn-default">See Details</button></h1>
             </div>
-
-        </div>
+        </a>
     </div>
+
     <div class="our-work" id="our-work">
-        <div class="container">
             <h2>Areas</h2>
             <p>UROP, Lang, Labu</p>
             <div class="gallery-bottom">
@@ -173,7 +114,7 @@ $toprated= gettop($link);
                         </div>
                     </a>
                 </div>
-
+                </div>
                 <div class="clearfix"></div>
                 <script src="js/jquery.chocolat.js"></script>
                 <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
@@ -185,13 +126,14 @@ $toprated= gettop($link);
                 </script>
             </div>
         </div>
+    <div class="container" style="width: 70%;">
         <div class="row" style="position:relative;">
             <div class="col-lg-12">
                 <h2 class="page-header" style="text-align:center;">Recommandations</h2>
             </div>
             <?php foreach($toprated as $row):  ?>
             <div class="col-md-4 text-center">
-                <div class="thumbnail">
+                <div class="thumbnail" style="background-color:  #d9edf7">
                     <div class="caption">
                         <h3>
                             <span class="glyphicon glyphicon-thumbs-up"></span>
@@ -203,7 +145,7 @@ $toprated= gettop($link);
                             </span>
                         </h3>
                         <hr>
-                        <table class="table table-hover table-striped">
+                        <table class="table">
                             <tr>
                                 <th width="40%">Research Area</th>
                                 <th width="60%">
@@ -227,7 +169,7 @@ $toprated= gettop($link);
                             <tr>
                                 <th width="40%">Star</th>
                                 <th width="60%">
-                                    <button class="btn btn-info" type="button">
+                                    <button class="btn btn-success" type="button">
                                         Star
                                         <span class="badge">
                                             <?php echo $row['star']?>
@@ -242,6 +184,7 @@ $toprated= gettop($link);
             </div>
             <?php endforeach?>
         </div>
+    </div>
     </div>
     </div>
     <?php

@@ -50,6 +50,7 @@
     <Compile Include="fonts\glyphicons-halflings-regular.ttf" />
     <Compile Include="fonts\glyphicons-halflings-regular.woff" />
     <Compile Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Compile Include="professor.php" />
     <Compile Include="images\1.jpg" />
     <Compile Include="images\11.jpg" />
     <Compile Include="images\12.jpg" />

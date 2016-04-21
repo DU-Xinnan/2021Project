@@ -170,7 +170,7 @@ if(!session_id())
     </style>
     <!--fonts-->
 </head>
-<body style="background-image:url('images/background.png')">
+<body style="background-image:url('images/background.gif');background-size: 360px 360px;">
     <div class="homepage-hero-module" style="position: fixed;">
         <div class="video-container">
             <video autoplay loop class="fillWidth"; style="opacity: 0.8;">

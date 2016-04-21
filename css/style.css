@@ -1,7 +1,8 @@
 h4, h5, h6,
 h1, h2, h3 {margin: 0; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
 ul, ol {margin: 0;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
-p,a,th {margin: 0;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+p,a,th {margin: 0;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 120%;}
+a,a:hover{ text-decoration:none;}
 body{
 	margin:0;
 	padding:0;
@@ -147,9 +148,6 @@ span.glyphicon.glyphicon-search.edit {
 	color: #fff;
 }
 .btn-warning {
-	color: #fff;
-	background-color: #00BFE9 !important;
-	 border-color: #00BFE9;
 }
 .btn-warning:hover{
 	color: #fff;

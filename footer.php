@@ -1,4 +1,4 @@
-<div class="footer" style="position:relative;top:0px;">
+<div class="footer" style="position:relative;top:150px;">
         <div class="social">
             <ul>
                 <li><a href="#" class="face"></a></li>
