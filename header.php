@@ -169,8 +169,17 @@ if(!session_id())
                 }
     </style>
     <!--fonts-->
+    <script>
+        var windowheight = document.body.clientHeight;
+        var windowwidth = document.body.clientWidth;
+        var animation = document.getElementById("canvas");
+        console.log(windowheight);
+        console.log(windowwidth);
+    </script>
 </head>
 <body style="background-image:url('images/background.gif');background-size: 360px 360px;">
+    <canvas  width="1920" height="1080" id="canvas" style="position:fixed;"></canvas>
+    <script src="js/background.js" charset="utf-8"></script>
     <!--<div class="homepage-hero-module" style="position: fixed;">
         <div class="video-container">
             <video autoplay loop class="fillWidth"; style="opacity: 0.8;">

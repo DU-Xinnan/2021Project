@@ -26,11 +26,11 @@ $projectNo=count($project);
     </div>
     <!-- /.row -->
     <!-- Blog Post Row -->
-    <div class="row">
-        <div class="col-md-2">
+    <div class="row" style="background-color:white;">
+        <div class="col-md-2" style="top:20px;">
             <img src=<?php echo $professor['image']."  "?> alt="..." class="img-thumbnail" style="width:100%;"/>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10" style="top:10px;">
             <h2>
                     Pro. <?php echo $professor['name']."  "?>
                 <button class="btn btn-info" type="button">
