@@ -50,7 +50,6 @@
     <Compile Include="fonts\glyphicons-halflings-regular.ttf" />
     <Compile Include="fonts\glyphicons-halflings-regular.woff" />
     <Compile Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Compile Include="library\getData.php" />
     <Compile Include="professor.php" />
     <Compile Include="images\1.jpg" />
     <Compile Include="images\11.jpg" />
@@ -120,7 +119,10 @@
     <Compile Include="index.php" />
     <Compile Include="newComment.php" />
     <Compile Include="pages.html" />
+    <Compile Include="show.php" />
+    <Compile Include="urop.php" />
     <Compile Include="register.php" />
+    <Compile Include="scraper.php" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".idea\copyright" />
@@ -135,5 +137,8 @@
     <Folder Include="images" />
     <Folder Include="js" />
     <Folder Include="library" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\newStyle.css" />
   </ItemGroup>
 </Project>
