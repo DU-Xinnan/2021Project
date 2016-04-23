@@ -5,8 +5,7 @@ require_once 'include.php';
 #   header("Location: register.php");
 if(!session_id())
     session_start();
-if (!$_POST)
-    $item=40;
+$item=40;
 ?>
 
     <div class="urop-page">
@@ -49,11 +48,11 @@ if (!$_POST)
                             </select>
                         </div>
                         <div class="col-md-2">
-                            <input type="submit" name="submit" value="Search" class="btn btn-info mrg" id="search-button" />
+                            <input type="submit" name="submit-search" value="Search" class="btn btn-info mrg" id="search-button" />
                         </div>
                     </div>
 </form>
-            <table class="table table-sm">
+            <table class="table table-sm" id="projectList">
                 <tr>
                     <th>Project Name</th>
                     <th>Supervisor</th>
@@ -62,7 +61,7 @@ if (!$_POST)
                 </tr>
                 <tbody>
                     <?php
-                    if ($_POST) 
+                    if (!empty($_POST['submit-search'])) 
                     {
                         $dept = $_POST['dept'];
                         $prof = $_POST['prof'];
@@ -121,6 +120,11 @@ if (!$_POST)
                     ?>
                 </tbody>
             </table>
+            <script>
+                $(document).ready(function () {
+                    $('#projectList').DataTable();
+                });
+            </script>
         </div>
     </div>
 <?php
