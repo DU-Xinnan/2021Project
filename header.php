@@ -20,6 +20,7 @@ if(!session_id())
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!--coustom css-->
     <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/newStyle.css" rel="stylesheet" type="text/css" />
     <!--fonts-->
     <link href='http://fonts.useso.com/css?family=Coda:400,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.useso.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
@@ -171,7 +172,7 @@ if(!session_id())
     <!--fonts-->
 </head>
 <body style="background-image:url('images/background.gif');background-size: 360px 360px;">
-    <!--<div class="homepage-hero-module" style="position: fixed;">
+    <div class="homepage-hero-module" style="position: fixed;">
         <div class="video-container">
             <video autoplay loop class="fillWidth"; style="opacity: 0.8;">
                 <source src="MP4/Up.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
@@ -181,7 +182,7 @@ if(!session_id())
                 <img src="Snapshots/Up.jpg" alt="">
             </div>
         </div>
-    </div>-->
+    </div>
 <div class="header" id="home" style="position:fixed; width:100%;z-index:10;">
     <nav class="navbar navbar-default">
         <div class="container">
@@ -202,7 +203,12 @@ if(!session_id())
                     <li class="dropdown">
                         <a href="about.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Reviews">Reviews</span><span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="about.html"><span data-hover="UROP">UROP</span></a></li>
+                            <?php
+                            if(isset($_SESSION['username']))
+                                echo "<li><a href=\"urop.php\"><span data-hover=\"UROP\">UROP</span></a></li>";
+                            else
+                                echo "<li><a href=\"register.php\"><span data-hover=\"register\">UROP</span></a></li>";
+                                ?>
                             <li><a href="Pages.html"><span data-hover="LANG">LANG</span></a></li>
                             <li>
                                 <a href="newComment.php"><span data-hover="LABU">LABU</span></a>
