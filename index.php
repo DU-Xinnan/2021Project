@@ -126,13 +126,13 @@ $toprated= gettop($link);
                 </script>
             </div>
         </div>
-    <div class="container" style="width:70%;">
+    <div class="container" style="width: 70%;">
         <div class="row" style="position:relative;">
             <div class="col-lg-12">
                 <h2 class="page-header" style="text-align:center;">Recommandations</h2>
             </div>
             <?php foreach($toprated as $row):  ?>
-            <div class="col-md-6 text-center">
+            <div class="col-md-4 text-center">
                 <div class="thumbnail" style="background-color:  #d9edf7">
                     <div class="caption">
                         <h3>

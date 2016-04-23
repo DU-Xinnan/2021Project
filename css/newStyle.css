@@ -1,0 +1,139 @@
+﻿
+
+/*project page starts here*/
+.urop-page {
+	padding: 3em 0em;
+}
+.urop {
+	margin-bottom: 3em;
+}
+.urop-page h3{
+    font-family: 'Jockey One', sans-serif;
+	font-weight: 100;
+	color: #0B0354;
+	font-size: 3em;
+	text-transform: capitalize;
+	margin: 100px 0px 30px 0px;
+    text-align:center;
+}
+
+.urop-page table {
+    text-align:left;
+    margin-top: 3em;
+}
+
+.urop-page th {
+    background-color:#0B0354;
+    color: whitesmoke;
+}
+
+.urop-page table tbody tr:nth-child(even) {
+    background-color:rgba(102, 95, 156, 0.30);
+}
+
+.urop-page table tbody tr:nth-child(odd) {
+    background-color:rgba(224, 224, 224, 0.30);
+}
+
+.urop-page table .write-button {
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.urop-page table .title-button {
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.urop-page td a {
+    color: #5e5a77;
+}
+
+.urop-page td a:hover {
+    color: #0B0354;
+}
+
+.urop-page .select-project {
+    margin-right: 1em;
+}
+
+.urop-page form label {
+    text-align:left;
+	font-family: 'Jockey One', sans-serif;
+	font-weight: 300;
+	color: #00BFF3;
+	font-size: 1.5em;
+	margin-bottom:5px;
+}
+
+#search-button {
+    position:relative;
+    margin-top: 2.5em;
+}
+
+/*new comment page starts here*/
+
+.write-page {
+    padding: 3em 0em;
+
+}
+
+.write-page h3 {
+    font-family: 'Jockey One', sans-serif;
+	font-weight: 100;
+	color: #0B0354;
+	font-size: 3em;
+	text-transform: capitalize;
+	margin: 100px 0px 30px 0px;
+        text-align:center;
+}
+
+.form-group {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.write {
+    margin-right: 3em;
+}
+
+.write label {
+    text-align: left;
+	font-family: 'Jockey One', sans-serif;
+	font-weight: 300;
+	color: #00BFF3;
+	font-size: 1.7em;
+	margin-bottom:10px;
+}
+
+#rate-number {
+    font-family: 'Jockey One', sans-serif;
+	font-weight: 300;
+	color: #0B0354;
+	font-size: 1.7em;
+}
+
+#warning {
+    text-align: left;
+	color: #D80B36;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+	padding: 0 !important;
+	font-family: 'OpenSans-Regular';
+}
+
+/*handle comment page*/
+.submit-page h3 {
+    
+    font-family: 'Jockey One', sans-serif;
+	font-weight: 100;
+	color: #0B0354;
+	font-size: 3em;
+	text-transform: capitalize;
+	margin: 100px 0px 30px 0px;
+        text-align:center;
+}
