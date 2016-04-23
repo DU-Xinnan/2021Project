@@ -48,7 +48,7 @@ $projectNo=count($project);
                     </th>
                 </tr>
                 <tr>
-                    <th width="30%">Research Area</th>
+                    <th width="30%">Email</th>
                     <th width="70%">
                         <a href="mailto:<?php echo $professor['email']?>" title="Send Email">
                             <?php echo $professor['email']?>
@@ -59,6 +59,12 @@ $projectNo=count($project);
                     <th width="30%">Department</th>
                     <th width="70%">
                         <?php echo $professor['department']?>
+                    </th>
+                </tr>
+                <tr>
+                    <th width="30%">Homepage</th>
+                    <th width="7 0%">
+                        <a href="<?php echo $professor['homepage'];?>"><?php echo $professor['homepage'];?></a>
                     </th>
                 </tr>
                 <tr>

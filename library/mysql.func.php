@@ -20,6 +20,7 @@ function insert($table,$array,$link){
     $keys=join(",",array_keys($array));
     $vals="'".join("','",array_values($array))."'";
     $sql="insert into {$table}($keys) values({$vals})";
+    //echo $sql;
     mysqli_query($link,$sql);
     return mysqli_insert_id($link);
 }

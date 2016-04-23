@@ -171,7 +171,7 @@ if(!session_id())
     <!--fonts-->
 </head>
 <body style="background-image:url('images/background.gif');background-size: 360px 360px;">
-    <div class="homepage-hero-module" style="position: fixed;">
+    <!--<div class="homepage-hero-module" style="position: fixed;">
         <div class="video-container">
             <video autoplay loop class="fillWidth"; style="opacity: 0.8;">
                 <source src="MP4/Up.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
@@ -181,7 +181,7 @@ if(!session_id())
                 <img src="Snapshots/Up.jpg" alt="">
             </div>
         </div>
-    </div>
+    </div>-->
 <div class="header" id="home" style="position:fixed; width:100%;z-index:10;">
     <nav class="navbar navbar-default">
         <div class="container">
