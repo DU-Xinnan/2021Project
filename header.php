@@ -30,8 +30,6 @@ if(!session_id())
     <script src="js/modernizr.custom.js"></script>
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/dataTables.bootstrap.min.js"></script>
-    <script src="js/jquery.dataTables.min.js"></script>
     <script>
         //jQuery is required to run this code
         $( document ).ready(function() {

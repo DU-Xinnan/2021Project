@@ -120,11 +120,6 @@ $item=40;
                     ?>
                 </tbody>
             </table>
-            <script>
-                $(document).ready(function () {
-                    $('#projectList').DataTable();
-                });
-            </script>
         </div>
     </div>
 <?php
