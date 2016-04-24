@@ -81,7 +81,7 @@ if(!session_id())
             <div class="row" style="margin-top: 150px; text-align: center">
 
                 <?php
-                    echo "<a href=\"show.php?pid=$pid&projid=$projid\">
+                    echo "<a href=\"show.php?pid=$pid&projid=$projid&written=true\">
                     <span class=\"btn btn-primary mrg\">View This Project</span>
                 </a>";
                 ?>

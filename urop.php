@@ -96,13 +96,7 @@ if (!$_POST)
 
                     foreach ($resultP as $proj)
                     {
-                        #print_r($proj);
-                        echo "<tr>
-                            <td style=\"width: 56%\" class=\"title-button\">
-                                <a href=\"show.php?pid=$proj[3]&projid=$proj[4]\">$proj[0]</a>
-                            </td>
-                            <td style=\"width: 12%\">$proj[1]</td>
-                            <td style=\"width: 20%\">$proj[2]</td><td class=\"write-button\">";
+
                         $writtenThis = false;
                         foreach ($written as $writtenC)
                         {
@@ -112,7 +106,21 @@ if (!$_POST)
                                 break;
                             }
                         }
-                        if ($writtenThis)
+
+                        #print_r($proj)
+                        echo "<tr>
+                            <td style=\"width: 56%\" class=\"title-button\">";
+                        if ($writtenThis=="true")
+                            echo "<a href=\"show.php?pid=$proj[3]&projid=$proj[4]&written=true\">$proj[0]</a>";
+                        else
+                            echo "<a href=\"show.php?pid=$proj[3]&projid=$proj[4]&written=false\">$proj[0]</a>";
+                        echo "</td>
+                            <td style=\"width: 12%\">$proj[1]</td>
+                            <td style=\"width: 20%\" class=\"title-button\">
+                                <a href=\"professor.php?pid=$proj[3]\">$proj[2]</a>
+                            </td><td class=\"write-button\">";
+
+                        if ($writtenThis=="true")
                             echo "<a href=\"newComment.php?pid=$proj[3]&projid=$proj[4]&written=true\">Modify Comment</a>";
                         else
                             echo "<a href=\"newComment.php?pid=$proj[3]&projid=$proj[4]&written=false\">Write Comment</a>";
