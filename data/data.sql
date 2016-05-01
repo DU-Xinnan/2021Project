@@ -61,6 +61,7 @@ CREATE TABLE `user` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `user` WRITE;
+
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
 INSERT INTO `user` VALUES (2,'king','123456789','男','770273644@qq.com','user1.jpg',1402583678,0);
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;

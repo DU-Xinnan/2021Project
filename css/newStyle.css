@@ -49,10 +49,14 @@
 
 .urop-page td a {
     color: #5e5a77;
+    position: relative;
+    z-index: 1;
 }
 
 .urop-page td a:hover {
     color: #0B0354;
+    position: relative;
+    z-index: 1;
 }
 
 .urop-page .select-project {
@@ -72,6 +76,54 @@
     position:relative;
     margin-top: 2.5em;
 }
+
+/*specification for single project page*/
+.show h3
+{
+    text-align:left;
+    font-size: 2em;
+}
+
+.show table th
+{
+    width: 20%;
+}
+
+.show table
+{
+    margin-top: 0em;
+    margin-bottom: 5em;
+}
+
+.show table tr:nth-child(even) th {
+    background-color:rgba(102, 95, 156, 0.50);
+}
+
+.show table tr:nth-child(odd) th {
+    background-color:rgba(224, 224, 224, 0.50);
+    color:rgb(102, 95, 156);
+}
+
+.show .btn, .write-page .btn, .submit-page .btn {
+    position: relative;
+    z-index: 1;
+}
+
+.show .btn {
+    right: 0;
+    position: absolute;
+}
+
+.show ul {
+    position: relative;
+    margin-top: 10em;
+}
+
+.show table a {
+    font-size: 1em;
+    color: black;
+}
+
 
 /*new comment page starts here*/
 
@@ -99,7 +151,7 @@
     margin-right: 3em;
 }
 
-.write label {
+.write label, .show label, .show h4 {
     text-align: left;
 	font-family: 'Jockey One', sans-serif;
 	font-weight: 300;
