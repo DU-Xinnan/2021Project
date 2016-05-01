@@ -3,42 +3,6 @@ include_once 'header.php';
 require_once 'include.php';
 ?>
 
-<!doctype html>
-<html>
-<head>
-    <title>About</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Play-Offs Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-    <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-    <!meta charset utf="8">
-    <!--flexslider-css-->
-    <link href="css/flexslider.css" rel='stylesheet' type='text/css' />
-    <!--bootstrap-->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!--coustom css-->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <!--fonts-->
-    <link href='http://fonts.useso.com/css?family=Coda:400,800' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.useso.com/css?family=Jockey+One' rel='stylesheet' type='text/css' />
-    <!--script-->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!--script-->
-    <script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
-    </script>
-    <!--fonts-->
-</head>
-<body>
     <div class="container">
         <table style="border: 2px solid black; margin-top: 150px">
             <tr style="border: 2px dashed blue; margin-bottom: 10px">
@@ -48,7 +12,7 @@ require_once 'include.php';
                 <th>Project Description</th>
             </tr>
             <?php
-$url='http://urop.ust.hk/cgi-bin/uropos/index.php';
+$url='http://urop.ust.hk/cgi-bin/uropos/index.php?dpoption=CSE';
 $content = file_get_contents($url);
 preg_match_all('/<a href\="\?action\=details&id\=([0-9]*)">(.*)<\/a>/i', $content, $project);
 $url = array();
@@ -71,12 +35,13 @@ foreach($url as $pageUrl)
     #$pageContent = file_get_contents($url[$i]);
     $pageContent = file_get_contents($pageUrl);
     $pageDesc = array(0=>' ',1=>' ');
-    preg_match('/Project Description:[\n ]*<\/td>[\n ]*<td class\="project02_table_right">[\n ]*(.*)[\n ]*<\/td>/i', $pageContent, $pageDesc);
-    if (!isset($pageDesc[1]))
+    preg_match('/Project Description:[\n ]*<\/td>[\n ]*<td class\="project02_table_right">(.*)<\/td>[\n ]*<\/tr>[\n ]*<tr>[\n ]*<td class\="project02_table_left">Course type:/s', $pageContent, $pageDesc);  
+if (!isset($pageDesc[1]))
         $pageDesc[1] = "No description.";
     $description[] = $pageDesc[1];
     #print_r($pageDesc[1]);
 }
+
 #print_r($description);
 
 #for ($i=0; $i<30; $i++)
@@ -86,7 +51,8 @@ for ($i=0; $i<sizeof($project); $i++)
     <td style=\"width: 15%\">$project[$i]</td>
     <td style=\"width: 15%\">$prof[$i]</td>
     <td style=\"width: 15%\">$dept[$i]</td>
-    <td style=\"width: 50%\">$description[$i]</td>
+    <td style=\"width: 40%\">$description[$i]</td>
+    <td style=\"width: 10%\">$url[$i]</td>
     </tr>";
 }
 echo "</table>";
@@ -131,7 +97,7 @@ for ($i=0; $i<sizeof($project); $i++)
     $check = implode("",$check);
     if ($check==0)
     {
-        $query = "INSERT INTO project (p_id, proj_name, description) VALUES ('$pid', '$project[$i]', '$description[$i]')";
+        $query = "INSERT INTO project (p_id, proj_name, description, url) VALUES ('$pid', '$project[$i]', '$description[$i]', $url[$i])";
         mysqli_query($link,$query);
     }
 }
@@ -142,8 +108,7 @@ mysqli_close($link);
 
         </table>
     </div>
-</body>
-</html>
+
 <?php
 include_once "footer.php"
 ?>
