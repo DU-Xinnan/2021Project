@@ -177,7 +177,7 @@ if(!session_id())
         console.log(windowwidth);
     </script>
 </head>
-<body style="background-image:url('images/background.gif');background-size: 360px 360px;">
+<body id="body">
     <canvas  width="1920" height="1080" id="canvas" style="position:fixed;"></canvas>
     <script src="js/background.js" charset="utf-8"></script>
     <!--<div class="homepage-hero-module" style="position: fixed;">

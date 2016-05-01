@@ -26,7 +26,7 @@ $projectNo=count($project);
     </div>
     <!-- /.row -->
     <!-- Blog Post Row -->
-    <div class="row" style="background-color:white;">
+    <div class="row" style="">
         <div class="col-md-2" style="top:20px;">
             <img src=<?php echo $professor['image']."  "?> alt="..." class="img-thumbnail" style="width:100%;"/>
         </div>
@@ -64,7 +64,7 @@ $projectNo=count($project);
                 <tr>
                     <th width="30%">Homepage</th>
                     <th width="7 0%">
-                        <a href="<?php echo $professor['homepage'];?>"><?php echo $professor['homepage'];?></a>
+                        <a href="<?php echo $professor['homepage'];?>" target="blank"><?php echo $professor['homepage'];?></a>
                     </th>
                 </tr>
                 <tr>

@@ -7,12 +7,13 @@ if(!session_id())
     session_start();
 if (!$_POST)
     $item=40;
+var_dump($_POST);
 ?>
 
-    <div class="urop-page">
+    <div class="urop-page" style="top:100px;position: relative;min-height: 800px;">
         <h3>UROP Project List</h3>
         <div class="container">
-            <form action=# method="post">
+            <form action="urop.php" method="post">
                    <div class="row">
                         <div class="col-md-4 select-project">
                             <label for="dep">Department</label>

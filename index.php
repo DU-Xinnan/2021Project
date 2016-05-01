@@ -4,6 +4,12 @@ include_once "header.php";
 //亮蓝：#00BFE9 !important 
 $toprated= gettop($link);
 ?>
+<script>
+    var changeBody=document.getElementById("body");
+    changeBody.style.backgroundColor="black";
+    backgroundjs();
+
+</script>
 <div class="header-banner" style="position:relative;top:80px;">
 	<!-- Top Navigation -->
 	<div class="container page-seperator">
@@ -52,11 +58,11 @@ $toprated= gettop($link);
 	</script>
 	<!-- FlexSlider -->
 </section>
-<div class="container" id="more"style="position:relative;top:70px; width:80%;">
+<div class="container" id="more"style="position:relative;top:70px; width:70%;">
     <!-- Marketing Icons Section -->
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">
+            <h1 class="page-header" style="color: white;">
                 Welcome to UST<span style="color:#00BFE9 !important;">eacher</span>
             </h1>
         </div>
@@ -76,7 +82,7 @@ $toprated= gettop($link);
             </div>
         </a>
     </div>
-
+<!--
     <div class="our-work" id="our-work">
             <h2>Areas</h2>
             <p>UROP, Lang, Labu</p>
@@ -118,22 +124,23 @@ $toprated= gettop($link);
                 <div class="clearfix"></div>
                 <script src="js/jquery.chocolat.js"></script>
                 <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
-                <!--light-box-files -->
+
                 <script type="text/javascript" charset="utf-8">
                     $(function () {
                         $('.bottom-gallery a').Chocolat();
                     });
                 </script>
             </div>
+    -->
         </div>
-    <div class="container" style="width: 70%;">
+    <div class="container" style="width: 70%;position:relative;top:100px;">
         <div class="row" style="position:relative;">
             <div class="col-lg-12">
-                <h2 class="page-header" style="text-align:center;">Recommandations</h2>
+                <h2 class="page-header" style="text-align:center;color: white;">Recommandations</h2>
             </div>
             <?php foreach($toprated as $row):  ?>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail" style="background-color:  #d9edf7">
+            <div class="col-md-6 text-center">
+                <div class="thumbnail" style="background-color:#E9E9E9;">
                     <div class="caption">
                         <h3>
                             <span class="glyphicon glyphicon-thumbs-up"></span>

@@ -116,30 +116,28 @@ for ($i=0; $i<sizeof($project); $i++)
 #for ($i=0; $i<30; $i++)
 for ($i=0; $i<sizeof($project); $i++)
 {
-    $query_pid = "SELECT p_id FROM professor WHERE name='$prof[$i]'";
+        $query_pid = "SELECT p_id FROM professor WHERE name='$prof[$i]'";
 
-    $result = mysqli_query($link,$query_pid);
-    #echo "$result";
-    $pid = mysqli_fetch_assoc($result);
+        $result = mysqli_query($link, $query_pid);
+        #echo "$result";
+        $pid = mysqli_fetch_assoc($result);
 
-    #print_r($pid);
-    $pid = implode("",$pid);
+        #print_r($pid);
+        $pid = implode("", $pid);
 
-    $checkQ = "SELECT count(*) FROM project WHERE proj_name='$project[$i]'";
-    $check = mysqli_query($link,$checkQ);
-    $check = mysqli_fetch_assoc($check);
-    $check = implode("",$check);
-    if ($check==0)
-    {
-        $query = "INSERT INTO project (p_id, proj_name, description) VALUES ('$pid', '$project[$i]', '$description[$i]')";
-        mysqli_query($link,$query);
-    }
+        $checkQ = "SELECT count(*) FROM project WHERE proj_name='$project[$i]'";
+        $check = mysqli_query($link, $checkQ);
+        $check = mysqli_fetch_assoc($check);
+        $check = implode("", $check);
+        if ($check == 0) {
+            $query = "INSERT INTO project (p_id, proj_name, description) VALUES ('$pid', '$project[$i]', '$description[$i]')";
+            //echo $query;
+            mysqli_query($link, $query);
+        }
 }
 
-mysqli_close($link);
+//mysqli_close($link);
             ?>
-
-
         </table>
     </div>
 </body>
