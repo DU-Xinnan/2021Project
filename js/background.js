@@ -9,9 +9,9 @@ var canvas = document.querySelector("canvas"),
     context = canvas.getContext("2d"),
     width = canvas.width,
     height = canvas.height,
-    radius = 4,
-    minDistance = 60,
-    maxDistance = 100,
+    radius = 5,
+    minDistance = 80,
+    maxDistance = 120,
     minDistance2 = minDistance * minDistance,
     maxDistance2 = maxDistance * maxDistance;
 
@@ -69,10 +69,10 @@ timer.timer(function(elapsed) {
 	  color='grey';
   context.restore();
   context.font = "30px COCOGOOSE21dd0b8144f60";
-  context.fillStyle = color;
+  context.fillStyle = 'grey';
   context.strokeStyle = "grey";
   context.fillText("", 540 ,200);
 });
 };
 
-backgroundjs();
+//backgroundjs();
